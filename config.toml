@@ -1,6 +1,6 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'My thoughts'
 theme = "m10c"
 
 [[menu.main]]
@@ -8,10 +8,18 @@ theme = "m10c"
   name = "Tags"
   url = "/tags/"
 
-  [[params.social]]
-  icon = "github"
-  name = "My Github"
-  url = "https://github.com/vaga"
-
   [params.style]
   primaryColor = "#77a6ee"
+
+[params]
+  author = "Jase"
+  description = "The site description"
+  menu_item_separator = " - "
+  [[params.social]]
+    icon = "github"
+    name = "Github"
+    url = "https://github.com/gohugoio"
+  [[params.social]]
+    icon = "twitter"
+    name = "Twitter"
+    url = "https://twitter.com/gohugoio"
