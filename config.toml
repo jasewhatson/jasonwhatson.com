@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://jasonwhatson.com/'
 languageCode = 'en-us'
 title = 'My thoughts'
 theme = "m10c"
@@ -12,14 +12,14 @@ theme = "m10c"
   primaryColor = "#77a6ee"
 
 [params]
-  author = "Jase"
-  description = "The site description"
+  author = "Jase Whatson"
+  description = "Documenting my journey as a developer into web3, blockchain, finance, cryptographic consensus & related topics. DYOR"
   menu_item_separator = " - "
   [[params.social]]
     icon = "github"
     name = "Github"
-    url = "https://github.com/gohugoio"
+    url = "https://github.com/jasewhatson"
   [[params.social]]
     icon = "twitter"
     name = "Twitter"
-    url = "https://twitter.com/gohugoio"
+    url = "https://twitter.com/jasewhatson"

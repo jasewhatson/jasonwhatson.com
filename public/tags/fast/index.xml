@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>fast on My thoughts</title>
-    <link>http://example.org/tags/fast/</link>
+    <link>https://jasonwhatson.com/tags/fast/</link>
     <description>Recent content in fast on My thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Nov 2022 09:22:16 +1100</lastBuildDate><atom:link href="http://example.org/tags/fast/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Nov 2022 09:22:16 +1100</lastBuildDate><atom:link href="https://jasonwhatson.com/tags/fast/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
-      <link>http://example.org/posts/my-first-post/</link>
+      <link>https://jasonwhatson.com/posts/my-first-post/</link>
       <pubDate>Sat, 05 Nov 2022 09:22:16 +1100</pubDate>
       
-      <guid>http://example.org/posts/my-first-post/</guid>
+      <guid>https://jasonwhatson.com/posts/my-first-post/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>

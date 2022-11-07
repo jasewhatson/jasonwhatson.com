@@ -2,30 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/tags/blogging/</loc>
+    <loc>https://jasonwhatson.com/tags/blockchain-development/</loc>
+    <lastmod>2022-11-07T22:18:07+11:00</lastmod>
+  </url><url>
+    <loc>https://jasonwhatson.com/posts/crypto-projects-written-in-golang/</loc>
+    <lastmod>2022-11-07T22:18:07+11:00</lastmod>
+  </url><url>
+    <loc>https://jasonwhatson.com/tags/go/</loc>
+    <lastmod>2022-11-07T22:18:07+11:00</lastmod>
+  </url><url>
+    <loc>https://jasonwhatson.com/</loc>
+    <lastmod>2022-11-07T22:18:07+11:00</lastmod>
+  </url><url>
+    <loc>https://jasonwhatson.com/posts/</loc>
+    <lastmod>2022-11-07T22:18:07+11:00</lastmod>
+  </url><url>
+    <loc>https://jasonwhatson.com/tags/</loc>
+    <lastmod>2022-11-07T22:18:07+11:00</lastmod>
+  </url><url>
+    <loc>https://jasonwhatson.com/tags/blogging/</loc>
     <lastmod>2022-11-05T09:22:16+11:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/development/</loc>
+    <loc>https://jasonwhatson.com/tags/development/</loc>
     <lastmod>2022-11-05T09:22:16+11:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/fast/</loc>
+    <loc>https://jasonwhatson.com/tags/fast/</loc>
     <lastmod>2022-11-05T09:22:16+11:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/go/</loc>
+    <loc>https://jasonwhatson.com/posts/my-first-post/</loc>
     <lastmod>2022-11-05T09:22:16+11:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/my-first-post/</loc>
-    <lastmod>2022-11-05T09:22:16+11:00</lastmod>
-  </url><url>
-    <loc>http://example.org/</loc>
-    <lastmod>2022-11-05T09:22:16+11:00</lastmod>
-  </url><url>
-    <loc>http://example.org/posts/</loc>
-    <lastmod>2022-11-05T09:22:16+11:00</lastmod>
-  </url><url>
-    <loc>http://example.org/tags/</loc>
-    <lastmod>2022-11-05T09:22:16+11:00</lastmod>
-  </url><url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://jasonwhatson.com/categories/</loc>
   </url>
 </urlset>
