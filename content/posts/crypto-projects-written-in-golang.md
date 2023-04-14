@@ -26,4 +26,8 @@ I first started developing in Golang back in 2012 [upon version 1 release](https
 ### Thorchain
 [Thorchain](https://github.com/thorchain/thornode)
 
+### Thorchain
+[Thorchain](https://github.com/thorchain/thornode)
 
+### Rocket Pool 
+[Rocket Pool](https://github.com/rocket-pool/rocketpool) is a decentralised staking pool for Ethereum 2.0
