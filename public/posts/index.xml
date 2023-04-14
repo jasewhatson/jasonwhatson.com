@@ -17,16 +17,5 @@
 Golang is a systems programming language for building networked, distributed services.</description>
     </item>
     
-    <item>
-      <title>My First Post</title>
-      <link>https://jasonwhatson.com/posts/my-first-post/</link>
-      <pubDate>Sat, 05 Nov 2022 09:22:16 +1100</pubDate>
-      
-      <guid>https://jasonwhatson.com/posts/my-first-post/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
-    </item>
-    
   </channel>
 </rss>
