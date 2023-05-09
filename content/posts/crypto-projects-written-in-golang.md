@@ -26,7 +26,7 @@ I first started developing in Golang back in 2012 [upon version 1 release](https
 ### Thorchain
 [Thorchain](https://github.com/thorchain/thornode)
 
-Thorchain is a decentralized liquidity protocol built to enable cross-chain token swaps without requiring a trusted intermediary or wrapping tokens. Launched in 2018, Thorchain is built on Tendermint and Cosmos-SDK and allows users to swap tokens between different blockchains in a decentralized, non-custodial manner. 
+Thorchain is a decentralized liquidity protocol built to enable cross-chain token swaps without requiring a trusted intermediary or wrapping tokens. Launched in 2018, Thorchain is built on Tendermint and Cosmos-SDK and allows users to swap tokens between different blockchains in a decentralized, non-custodial manner.   
 
 ### Rocket Pool 
 [Rocket Pool](https://github.com/rocket-pool/rocketpool) is a decentralised staking pool for Ethereum 2.0
