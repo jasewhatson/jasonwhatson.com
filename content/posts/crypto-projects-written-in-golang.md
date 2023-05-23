@@ -30,3 +30,8 @@ Thorchain is a decentralized liquidity protocol built to enable cross-chain toke
 
 ### Rocket Pool 
 [Rocket Pool](https://github.com/rocket-pool/rocketpool) is a decentralised staking pool for Ethereum 2.0
+
+### Chainlink 
+[Chainlink](https://github.com/smartcontractkit/chainlink) Chainlink is a decentralized oracle network that enables smart contracts on several blockchains to securely connect and interact with real-world data & external APIs.
+
+Additionally, Chainlink provides a [CCIP (Cross-Chain Interoperability Protocol)](https://chain.link/cross-chain) which provides [cross-chain](https://www.youtube.com/watch?v=6DgnHKTI-EU) communication between public & private blockchains. For example Etherumn & [Swift interoperability](https://www.chainlinkecosystem.com/ecosystem/swift). Which could additionally provide [interoperability into CBDC's](https://www.businesswire.com/news/home/20221005005149/en/). CCIP technology will be able to connect traditional capital markets with trillions of dollars of value into decentralized finance ([DeFi](https://en.wikipedia.org/wiki/Decentralized_finance)). [CCIP is in the final stages of security review](https://chain-reaction.simplecast.com/episodes/chainlink-co-founder-talks-cryptographic-guarantees-in-web3-w-sergey-nazarov-PUnPyiNu?t=23m0s).
