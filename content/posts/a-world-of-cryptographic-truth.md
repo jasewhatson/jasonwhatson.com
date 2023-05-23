@@ -1,6 +1,6 @@
 ---
-title: "Crypto Projects Written in Golang"
-date: 2022-11-07T22:18:07+11:00
+title: "A World of Cryptographic Truth"
+date: 2023-05-23
 draft: false
 tags:
 - Blockchain-Development
@@ -9,11 +9,11 @@ tags:
 - Zero-knowledge proof
 ---
 
-# Cryptographic Truth
+
 
 <figure style="text-align: center;">
-    <img width="50%" src="underconstruction.jpeg" alt="Under construction">
-    <div>Under construction</div>
+    <img width="50%" src="../underconstruction.jpeg" alt="Under construction">
+    <div>Under construction - This article is a Work-In-Progress</div>
 </figure>
 
 In the context of distributed systems and blockchain, cryptographic truth refers to the ability to verify the veracity of information using cryptographic means. Through encryption and hash functions, we can ensure the integrity and authenticity of data.

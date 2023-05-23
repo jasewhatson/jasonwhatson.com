@@ -23,3 +23,6 @@ theme = "m10c"
     icon = "twitter"
     name = "Twitter"
     url = "https://twitter.com/jasewhatson"
+
+[markup.goldmark.renderer]
+  unsafe = true

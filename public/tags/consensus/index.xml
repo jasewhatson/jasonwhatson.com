@@ -6,14 +6,14 @@
     <description>Recent content in Consensus on My thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Nov 2022 22:18:07 +1100</lastBuildDate><atom:link href="https://jasonwhatson.com/tags/consensus/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jasonwhatson.com/tags/consensus/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Crypto Projects Written in Golang</title>
+      <title>A world of Cryptographic Truth</title>
       <link>https://jasonwhatson.com/posts/a-world-of-cryptographic-truth/</link>
-      <pubDate>Mon, 07 Nov 2022 22:18:07 +1100</pubDate>
+      <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://jasonwhatson.com/posts/a-world-of-cryptographic-truth/</guid>
-      <description>Cryptographic Truth In the context of distributed systems and blockchain, cryptographic truth refers to the ability to verify the veracity of information using cryptographic means. Through encryption and hash functions, we can ensure the integrity and authenticity of data.
+      <description>Cryptographic Truth Under construction In the context of distributed systems and blockchain, cryptographic truth refers to the ability to verify the veracity of information using cryptographic means. Through encryption and hash functions, we can ensure the integrity and authenticity of data.
 Encryption makes sure the content of a message is only accessible to those who possess the correct key. A hash function, on the other hand, generates a unique, fixed-size string of characters (the hash) from input data of any size.</description>
     </item>
     
