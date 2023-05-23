@@ -8,12 +8,12 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 23 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jasonwhatson.com/tags/blockchain-development/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>A world of Cryptographic Truth</title>
+      <title>A World of Cryptographic Truth</title>
       <link>https://jasonwhatson.com/posts/a-world-of-cryptographic-truth/</link>
       <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://jasonwhatson.com/posts/a-world-of-cryptographic-truth/</guid>
-      <description>Cryptographic Truth Under construction In the context of distributed systems and blockchain, cryptographic truth refers to the ability to verify the veracity of information using cryptographic means. Through encryption and hash functions, we can ensure the integrity and authenticity of data.
+      <description>Under construction - This article is a Work-In-Progress In the context of distributed systems and blockchain, cryptographic truth refers to the ability to verify the veracity of information using cryptographic means. Through encryption and hash functions, we can ensure the integrity and authenticity of data.
 Encryption makes sure the content of a message is only accessible to those who possess the correct key. A hash function, on the other hand, generates a unique, fixed-size string of characters (the hash) from input data of any size.</description>
     </item>
     
