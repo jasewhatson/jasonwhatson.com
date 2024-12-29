@@ -1,0 +1,390 @@
+<!--<!DOCTYPE html>
+ <html>
+
+<head>
+    <title>Matrix Multiplication: CPU vs GPU</title> -->
+    <style>
+        /* body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 20px;
+            background: #f5f5f5;
+        } */
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .button {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 0.375rem;
+            color: white;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .button-run {
+            background: #3b82f6;
+        }
+
+        .button-run:hover {
+            background: #2563eb;
+        }
+
+        .button-step {
+            background: #22c55e;
+        }
+
+        .button-step:hover {
+            background: #16a34a;
+        }
+
+        .button-reset {
+            background: #ef4444;
+        }
+
+        .button-reset:hover {
+            background: #dc2626;
+        }
+
+        .computation-section {
+            background: #242930;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .stats {
+            text-align: center;
+            font-family: monospace;
+            margin-bottom: 0.5rem;
+        }
+
+        .calculation {
+            text-align: center;
+            font-family: monospace;
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+            min-height: 1.5em;
+        }
+
+        .matrices {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .matrix-container {
+            text-align: center;
+        }
+
+        .matrix-label {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .matrix {
+            display: grid;
+            grid-template-columns: repeat(3, 3rem);
+            gap: 2px;
+            /*background: #f3f4f6;*/    
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+        }
+
+        .cell {
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /*background: white;*/
+            border: 1px solid rgb(175, 186, 196);
+            font-family: monospace;
+            color: white;
+        }
+
+        .cell.active {
+            background: #1f9d4e; /* #22c55e; /* #bbf7d0;*/
+             
+        }
+
+        .cell.computed {
+            background: #3b82f6; /* #bfdbfe; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="controls">
+            <button id="runButton" class="button button-run">Run Animation</button>
+            <button id="stepButton" class="button button-step">Step</button>
+            <button id="resetButton" class="button button-reset">Reset</button>
+        </div>
+
+        <!-- GPU Section -->
+        <div class="computation-section">
+            <div class="section-title">GPU Computation (Parallel)</div>
+            <div id="gpuStats" class="stats">Elements computed: 0 / 9</div>
+            <div id="gpuCalc" class="calculation"></div>
+            <div class="matrices">
+                <div class="matrix-container">
+                    <div class="matrix-label">Matrix A</div>
+                    <div id="gpuMatrixA" class="matrix"></div>
+                </div>
+                <div class="matrix-container">
+                    <div class="matrix-label">Matrix B</div>
+                    <div id="gpuMatrixB" class="matrix"></div>
+                </div>
+                <div class="matrix-container">
+                    <div class="matrix-label">Result</div>
+                    <div id="gpuMatrixC" class="matrix"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CPU Section -->
+        <div class="computation-section">
+            <div class="section-title">CPU Computation (Sequential)</div>
+            <div id="cpuStats" class="stats">Elements computed: 0 / 9</div>
+            <div id="cpuCalc" class="calculation"></div>
+            <div class="matrices">
+                <div class="matrix-container">
+                    <div class="matrix-label">Matrix A</div>
+                    <div id="cpuMatrixA" class="matrix"></div>
+                </div>
+                <div class="matrix-container">
+                    <div class="matrix-label">Matrix B</div>
+                    <div id="cpuMatrixB" class="matrix"></div>
+                </div>
+                <div class="matrix-container">
+                    <div class="matrix-label">Result</div>
+                    <div id="cpuMatrixC" class="matrix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const size = 3;
+        let currentStep = 0;
+        let isRunning = false;
+        let animationId = null;
+
+        const matrixA = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
+        ];
+
+        const matrixB = [
+            [9, 8, 7],
+            [6, 5, 4],
+            [3, 2, 1]
+        ];
+
+        const resultMatrix = [
+            [30, 24, 18],
+            [84, 69, 54],
+            [138, 114, 90]
+        ];
+
+        // Initialize computed states
+        const gpuComputed = Array(size).fill().map(() => Array(size).fill(false));
+        const cpuComputed = Array(size).fill().map(() => Array(size).fill(false));
+
+        function createMatrix(id, data) {
+            const matrix = document.getElementById(id);
+            matrix.innerHTML = '';
+            data.forEach((row, i) => {
+                row.forEach((value, j) => {
+                    const cell = document.createElement('div');
+                    cell.className = 'cell';
+                    cell.textContent = value;
+                    matrix.appendChild(cell);
+                });
+            });
+        }
+
+        function calculateCell(row, col) {
+            let sum = 0;
+            let calc = '';
+            for (let k = 0; k < size; k++) {
+                sum += matrixA[row][k] * matrixB[k][col];
+                calc += k === 0 ? `${matrixA[row][k]}×${matrixB[k][col]}` : ` + ${matrixA[row][k]}×${matrixB[k][col]}`;
+            }
+            return { result: sum, calculation: `${calc} = ${sum}` };
+        }
+
+        function clearHighlights(prefix) {
+            document.querySelectorAll(`#${prefix}MatrixA .cell, #${prefix}MatrixB .cell`)
+                .forEach(cell => cell.className = 'cell');
+        }
+
+        function highlightComputation(row, col, prefix) {
+            clearHighlights(prefix);
+
+            // Highlight current row in matrix A
+            for (let k = 0; k < size; k++) {
+                const cellA = document.querySelector(`#${prefix}MatrixA .cell:nth-child(${row * size + k + 1})`);
+                if (cellA) cellA.className = 'cell active';
+            }
+
+            // Highlight current column in matrix B
+            for (let k = 0; k < size; k++) {
+                const cellB = document.querySelector(`#${prefix}MatrixB .cell:nth-child(${k * size + col + 1})`);
+                if (cellB) cellB.className = 'cell active';
+            }
+
+            // Mark result cell as computed
+            const resultCell = document.querySelector(`#${prefix}MatrixC .cell:nth-child(${row * size + col + 1})`);
+            if (resultCell) {
+                resultCell.className = 'cell computed';
+                resultCell.textContent = resultMatrix[row][col];
+            }
+        }
+
+        function countComputed(matrix) {
+            return matrix.reduce((sum, row) =>
+                sum + row.reduce((s, cell) => s + (cell ? 1 : 0), 0), 0);
+        }
+
+        function updateStats() {
+            document.getElementById('gpuStats').textContent =
+                `Elements computed: ${countComputed(gpuComputed)} / ${size * size}`;
+            document.getElementById('cpuStats').textContent =
+                `Elements computed: ${countComputed(cpuComputed)} / ${size * size}`;
+        }
+
+        // Modified step() function
+        function step() {
+            if (currentStep >= size * size) {
+                isRunning = false;
+                return;
+            }
+
+            // GPU computation (parallel) - always process 4 elements if available
+            const gpuBatchSize = 4;
+            let gpuCalculations = [];
+
+            for (let i = 0; i < gpuBatchSize && (currentStep * gpuBatchSize + i) < size * size; i++) {
+                const index = currentStep * gpuBatchSize + i;
+                const row = Math.floor(index / size);
+                const col = index % size;
+
+                if (row < size && col < size) {
+                    gpuComputed[row][col] = true;
+                    const { calculation } = calculateCell(row, col);
+                    gpuCalculations.push(calculation);
+                    highlightComputation(row, col, 'gpu');
+                }
+            }
+
+            // CPU computation (sequential)
+            const cpuRow = Math.floor(currentStep / size);
+            const cpuCol = currentStep % size;
+            if (cpuRow < size && cpuCol < size) {
+                cpuComputed[cpuRow][cpuCol] = true;
+                const { calculation } = calculateCell(cpuRow, cpuCol);
+                document.getElementById('cpuCalc').textContent = calculation;
+                highlightComputation(cpuRow, cpuCol, 'cpu');
+            }
+
+            document.getElementById('gpuCalc').textContent = gpuCalculations.join(' | ');
+            updateStats();
+
+            // Update step counter
+            currentStep++;
+
+            // Check if computation is complete
+            if (countComputed(gpuComputed) >= size * size && countComputed(cpuComputed) >= size * size) {
+                isRunning = false;
+                document.getElementById('runButton').textContent = 'Run Animation';
+            }
+        }
+
+        // Update the run() function's animation timing
+        function run() {
+            isRunning = !isRunning;
+            document.getElementById('runButton').textContent = isRunning ? 'Pause' : 'Run Animation';
+
+            if (isRunning) {
+                function animate() {
+                    if (!isRunning) return;
+                    step();
+                    if (currentStep * 4 < size * size) {  // Updated condition
+                        setTimeout(() => requestAnimationFrame(animate), 1000);  // Increased delay for better visualization
+                    } else {
+                        isRunning = false;
+                        document.getElementById('runButton').textContent = 'Run Animation';
+                    }
+                }
+                animate();
+            }
+        }
+
+        function reset() {
+            currentStep = 0;
+            isRunning = false;
+            document.getElementById('runButton').textContent = 'Run Animation';
+
+            // Reset computed states
+            for (let i = 0; i < size; i++) {
+                for (let j = 0; j < size; j++) {
+                    gpuComputed[i][j] = false;
+                    cpuComputed[i][j] = false;
+                }
+            }
+
+            // Clear highlights and reset result matrices
+            clearHighlights('gpu');
+            clearHighlights('cpu');
+
+            // Reset calculations
+            document.getElementById('gpuCalc').textContent = '';
+            document.getElementById('cpuCalc').textContent = '';
+
+            // Reset result matrices
+            createMatrix('gpuMatrixC', Array(size).fill().map(() => Array(size).fill(0)));
+            createMatrix('cpuMatrixC', Array(size).fill().map(() => Array(size).fill(0)));
+
+            updateStats();
+        }
+
+        // Initialize matrices
+        createMatrix('gpuMatrixA', matrixA);
+        createMatrix('gpuMatrixB', matrixB);
+        createMatrix('gpuMatrixC', Array(size).fill().map(() => Array(size).fill(0)));
+        createMatrix('cpuMatrixA', matrixA);
+        createMatrix('cpuMatrixB', matrixB);
+        createMatrix('cpuMatrixC', Array(size).fill().map(() => Array(size).fill(0)));
+
+        // Add event listeners
+        document.getElementById('runButton').addEventListener('click', run);
+        document.getElementById('stepButton').addEventListener('click', step);
+        document.getElementById('resetButton').addEventListener('click', reset);
+
+        // Initial stats update
+        updateStats();
+    </script>
+<!-- </body>
+
+</html> -->

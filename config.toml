@@ -1,7 +1,10 @@
-baseURL = 'https://jasonwhatson.com/'
+#baseURL = 'https://jasonwhatson.com/'
+baseURL = 'http://localhost:3333'
 languageCode = 'en-us'
 title = 'My thoughts'
 theme = "m10c"
+publishDir = "docs"
+
 
 [[menu.main]]
   identifier = "tags"
@@ -26,3 +29,9 @@ theme = "m10c"
 
 [markup.goldmark.renderer]
   unsafe = true
+
+[markup]
+  [markup.highlight]
+    noClasses = true # Use inline styles. Set to true if using CSS classes for themes.
+    style = "monokai" # Replace "monokai" with your preferred style.
+    lineNos = true    # Enable line numbers.
