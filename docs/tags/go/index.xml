@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Go on My thoughts</title>
-    <link>http://localhost:3333/tags/go/</link>
+    <link>https://jasewhatson.github.io/jasonwhatson.com/tags/go/</link>
     <description>Recent content in Go on My thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Nov 2022 22:18:07 +1100</lastBuildDate><atom:link href="http://localhost:3333/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Nov 2022 22:18:07 +1100</lastBuildDate><atom:link href="https://jasewhatson.github.io/jasonwhatson.com/tags/go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Crypto Projects Written in Golang</title>
-      <link>http://localhost:3333/posts/crypto-projects-written-in-golang/</link>
+      <link>https://jasewhatson.github.io/jasonwhatson.com/posts/crypto-projects-written-in-golang/</link>
       <pubDate>Mon, 07 Nov 2022 22:18:07 +1100</pubDate>
       
-      <guid>http://localhost:3333/posts/crypto-projects-written-in-golang/</guid>
+      <guid>https://jasewhatson.github.io/jasonwhatson.com/posts/crypto-projects-written-in-golang/</guid>
       <description>I first started developing in Golang back in 2012 upon version 1 release &amp;amp; since its initial release, Golang has become quite popular with several major crypto &amp;amp; blockchain projects. This is a quick overview of the projects which have sparked my interest firstly starting with a quote providing some insight into why Golang has had success in the blockchain space.
 Golang is a systems programming language for building networked, distributed services.</description>
     </item>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Governance on My thoughts</title>
-    <link>http://localhost:3333/tags/governance/</link>
+    <link>https://jasewhatson.github.io/jasonwhatson.com/tags/governance/</link>
     <description>Recent content in Governance on My thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Nov 2023 19:45:56 +1100</lastBuildDate><atom:link href="http://localhost:3333/tags/governance/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Nov 2023 19:45:56 +1100</lastBuildDate><atom:link href="https://jasewhatson.github.io/jasonwhatson.com/tags/governance/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Complete Model of Money</title>
-      <link>http://localhost:3333/posts/the-complete-model-of-money/</link>
+      <link>https://jasewhatson.github.io/jasonwhatson.com/posts/the-complete-model-of-money/</link>
       <pubDate>Thu, 09 Nov 2023 19:45:56 +1100</pubDate>
       
-      <guid>http://localhost:3333/posts/the-complete-model-of-money/</guid>
+      <guid>https://jasewhatson.github.io/jasonwhatson.com/posts/the-complete-model-of-money/</guid>
       <description>Conceptual Foundations of Money Abstraction of Value 2. Regulatory Framework and Oversight
 Rule of Law Government Military (as it pertains to economic stability and national security) 3. Financial System Infrastructure
 Financial Institutions Centralized Ledger Information System Private Infrastructure Public Infrastructure Offshore Banking (as highlighted in &amp;ldquo;Treasure Islands&amp;rdquo; by Nicholas Shaxson) 4. Financial Instruments and Market Vehicles
@@ -21,10 +21,10 @@ Company Equity Derivatives Futures Contracts Government Bonds 5. Intellectual Pr
     
     <item>
       <title>A World of Cryptographic Truth</title>
-      <link>http://localhost:3333/posts/a-world-of-cryptographic-truth/</link>
+      <link>https://jasewhatson.github.io/jasonwhatson.com/posts/a-world-of-cryptographic-truth/</link>
       <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:3333/posts/a-world-of-cryptographic-truth/</guid>
+      <guid>https://jasewhatson.github.io/jasonwhatson.com/posts/a-world-of-cryptographic-truth/</guid>
       <description>Under construction - This article is a Work-In-Progress In the context of distributed systems and blockchain, cryptographic truth refers to the ability to verify the veracity of information using cryptographic means. Through encryption and hash functions, we can ensure the integrity and authenticity of data.
 Encryption makes sure the content of a message is only accessible to those who possess the correct key. A hash function, on the other hand, generates a unique, fixed-size string of characters (the hash) from input data of any size.</description>
     </item>
