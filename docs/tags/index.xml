@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on My thoughts</title>
-    <link>https://jasewhatson.github.io/jasonwhatson.com/tags/</link>
+    <link>https://jasonwhatson.com/tags/</link>
     <description>Recent content in Tags on My thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Nov 2023 19:45:56 +1100</lastBuildDate><atom:link href="https://jasewhatson.github.io/jasonwhatson.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Nov 2023 19:45:56 +1100</lastBuildDate><atom:link href="https://jasonwhatson.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blockchain-Development</title>
-      <link>https://jasewhatson.github.io/jasonwhatson.com/tags/blockchain-development/</link>
+      <link>https://jasonwhatson.com/tags/blockchain-development/</link>
       <pubDate>Thu, 09 Nov 2023 19:45:56 +1100</pubDate>
       
-      <guid>https://jasewhatson.github.io/jasonwhatson.com/tags/blockchain-development/</guid>
+      <guid>https://jasonwhatson.com/tags/blockchain-development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Consensus</title>
-      <link>https://jasewhatson.github.io/jasonwhatson.com/tags/consensus/</link>
+      <link>https://jasonwhatson.com/tags/consensus/</link>
       <pubDate>Thu, 09 Nov 2023 19:45:56 +1100</pubDate>
       
-      <guid>https://jasewhatson.github.io/jasonwhatson.com/tags/consensus/</guid>
+      <guid>https://jasonwhatson.com/tags/consensus/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Governance</title>
-      <link>https://jasewhatson.github.io/jasonwhatson.com/tags/governance/</link>
+      <link>https://jasonwhatson.com/tags/governance/</link>
       <pubDate>Thu, 09 Nov 2023 19:45:56 +1100</pubDate>
       
-      <guid>https://jasewhatson.github.io/jasonwhatson.com/tags/governance/</guid>
+      <guid>https://jasonwhatson.com/tags/governance/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Zero-knowledge proof</title>
-      <link>https://jasewhatson.github.io/jasonwhatson.com/tags/zero-knowledge-proof/</link>
+      <link>https://jasonwhatson.com/tags/zero-knowledge-proof/</link>
       <pubDate>Thu, 09 Nov 2023 19:45:56 +1100</pubDate>
       
-      <guid>https://jasewhatson.github.io/jasonwhatson.com/tags/zero-knowledge-proof/</guid>
+      <guid>https://jasonwhatson.com/tags/zero-knowledge-proof/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Go</title>
-      <link>https://jasewhatson.github.io/jasonwhatson.com/tags/go/</link>
+      <link>https://jasonwhatson.com/tags/go/</link>
       <pubDate>Mon, 07 Nov 2022 22:18:07 +1100</pubDate>
       
-      <guid>https://jasewhatson.github.io/jasonwhatson.com/tags/go/</guid>
+      <guid>https://jasonwhatson.com/tags/go/</guid>
       <description></description>
     </item>
     
