@@ -42,7 +42,7 @@ https://www.youtube.com/watch?v=h9Z4oGN89MU - How do Graphics Cards Work? Explor
 https://en.wikipedia.org/wiki/Single_instruction,_multiple_data
 https://en.wikipedia.org/wiki/Embarrassingly_parallel
 
-Deep learning with Python
+Deep learning with Python - FRANÇOIS CHOLLET
 
 1.3.1 Hardware
 Between 1990 and 2010, off-the-shelf CPUs became faster by a factor of approximately
