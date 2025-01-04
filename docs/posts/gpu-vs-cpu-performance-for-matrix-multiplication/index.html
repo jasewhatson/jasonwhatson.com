@@ -411,7 +411,8 @@ Run Animation Step Reset GPU Computation (Parallel) Elements computed: 0 / 9 Mat
                 function animate() {
                     if (!isRunning) return;
                     step();
-                    if (currentStep * 4 < size * size) {  // Updated condition
+                    //if (currentStep * 4 < size * size) {  // Updated condition
+                    if (currentStep < size * size) {  // Updated condition
                         setTimeout(() => requestAnimationFrame(animate), 1000);  // Increased delay for better visualization
                     } else {
                         isRunning = false;
