@@ -17,7 +17,7 @@ publishDir = "docs"
 
 [params]
   author = "Jase Whatson"
-  description = "Documenting my journey as a developer into web3, blockchain, finance, cryptographic consensus & related topics. DYOR"
+  description = "Documenting my journey as a developer into AI, web3, blockchain, finance, cryptographic consensus & related topics. DYOR"
   menu_item_separator = " - "
   [[params.social]]
     icon = "github"

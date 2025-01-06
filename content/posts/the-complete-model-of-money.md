@@ -1,7 +1,7 @@
 ---
 title: "The Complete Model of Money"
 date: 2023-11-09T19:45:56+11:00
-draft: false
+draft: true
 tags:
 - Blockchain-Development
 - Consensus

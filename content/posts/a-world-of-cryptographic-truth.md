@@ -12,7 +12,7 @@ tags:
 
 
 <figure style="text-align: center;">
-    <img width="50%" src="../underconstruction.jpeg" alt="Under construction">
+    <img width="50%" src="/images/underconstruction.jpeg" alt="Under construction">
     <div>Under construction - This article is a Work-In-Progress</div>
 </figure>
 
