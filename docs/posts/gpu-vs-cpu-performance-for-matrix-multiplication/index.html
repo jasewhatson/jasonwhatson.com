@@ -76,7 +76,13 @@
   <title>tag</title>
   <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
 </svg>
+              <a class="tag" href="https://jasonwhatson.com/tags/deep-learning/">Deep-Learning</a>
               <a class="tag" href="https://jasonwhatson.com/tags/gpu/">GPU</a>
+              <a class="tag" href="https://jasonwhatson.com/tags/matrix-multiplication/">Matrix-Multiplication</a>
+              <a class="tag" href="https://jasonwhatson.com/tags/parallel-computing/">Parallel-Computing</a>
+              <a class="tag" href="https://jasonwhatson.com/tags/neural-networks/">Neural-Networks</a>
+              <a class="tag" href="https://jasonwhatson.com/tags/artificial-intelligence/">Artificial-Intelligence</a>
+              <a class="tag" href="https://jasonwhatson.com/tags/linear-algebra/">Linear-Algebra</a>
         </div>
       </div>
     </header>
@@ -533,15 +539,6 @@ the first. <cite> - François Chollet <sup id="fnref:1"><a href="#fn:1" class="f
 <h2 id="conclusion">Conclusion</h2>
 <p>The shift from LSTMs to Transformers exemplifies how embracing parallelism revolutionized AI. By leveraging GPU-optimized architectures and operations like matrix multiplication, researchers have dramatically increased the scale, speed, and efficiency of training neural networks. The Transformer arcitectures ability to process sequences in parallel not only solved the inefficiencies of sequential models but also enabled the creation of groundbreaking LLMs. This leap in computational efficiency has paved the way for the explosive growth of AI, transforming industries and inspiring innovations that were once thought impossible.</p>
 <p>Artificial Neural Networks (ANNs), inspired by biological neurons, benefit immensely from GPUs because their core operations—primarily matrix multiplications—are inherently parallel. GPUs/TPUs are specifically designed for such workloads, with thousands of lightweight cores optimized for parallel matrix math and high memory bandwidth, making them ideal for the computational demands of AI.</p>
-<h3 id="supporting--additional-reading-resources">Supporting &amp; additional reading resources</h3>
-<p>How do Graphics Cards Work? Exploring GPU Architecture - <a href="https://www.youtube.com/watch?v=h9Z4oGN89MU">Branch Education Video</a></p>
-<p>GPU Memory bandwidth requirements for machine learning - <a href="https://www.digitalocean.com/community/tutorials/gpu-memory-bandwidth">Adil Lheureux</a></p>
-<p>CUDA Cores Vs Tensor Cores: Choosing The Right GPU For Machine Learning  - <a href="https://acecloud.ai/resources/blog/cuda-cores-vs-tensor-cores/">AceCloud</a></p>
-<p>Nvidia CUDA in 100 Seconds for parraell computations - <a href="https://www.youtube.com/watch?v=pPStdjuYzSI">Fireship Video</a></p>
-<p>Transformers (how LLMs work) explained visually (Transformer mat mul) - <a href="https://youtu.be/wjZofJX0v4M?si=uuc7uE_2MoTJD4wI&amp;t=297">3Blue1Brown</a></p>
-<p>SIMD Wiki - <a href="https://en.wikipedia.org/wiki/Single_instruction,_multiple_data">Wikipedia</a></p>
-<p>What is SIMD? <a href="https://www.youtube.com/watch?v=YuUMCVX3UVE">https://www.youtube.com/watch?v=YuUMCVX3UVE</a> - <a href="https://www.youtube.com/watch?v=YuUMCVX3UVE">Joshua Weinstein Video</a></p>
-<p>Embarrassingly parallel computing - <a href="https://en.wikipedia.org/wiki/Embarrassingly_parallel">Wikipedia</a></p>
 <h2 id="cuda-demo-code">Cuda Demo Code</h2>
 <figure style="text-align: center;">
     <img width="100%" src="/images/GPUCudavsCPU-ezgifdotcom.gif" alt="Under construction">
@@ -747,7 +744,16 @@ CPU Total Threads = 1 Single Thread
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div><div class="footnotes" role="doc-endnotes">
+</div><h2 id="supporting--additional-reading-resources">Supporting &amp; additional reading resources</h2>
+<p>How do Graphics Cards Work? Exploring GPU Architecture - <a href="https://www.youtube.com/watch?v=h9Z4oGN89MU">Branch Education Video</a></p>
+<p>GPU Memory bandwidth requirements for machine learning - <a href="https://www.digitalocean.com/community/tutorials/gpu-memory-bandwidth">Adil Lheureux</a></p>
+<p>CUDA Cores Vs Tensor Cores: Choosing The Right GPU For Machine Learning  - <a href="https://acecloud.ai/resources/blog/cuda-cores-vs-tensor-cores/">AceCloud</a></p>
+<p>Nvidia CUDA in 100 Seconds for parraell computations - <a href="https://www.youtube.com/watch?v=pPStdjuYzSI">Fireship Video</a></p>
+<p>Transformers (how LLMs work) explained visually (Transformer mat mul) - <a href="https://youtu.be/wjZofJX0v4M?si=uuc7uE_2MoTJD4wI&amp;t=297">3Blue1Brown</a></p>
+<p>SIMD Wiki - <a href="https://en.wikipedia.org/wiki/Single_instruction,_multiple_data">Wikipedia</a></p>
+<p>What is SIMD? <a href="https://www.youtube.com/watch?v=YuUMCVX3UVE">https://www.youtube.com/watch?v=YuUMCVX3UVE</a> - <a href="https://www.youtube.com/watch?v=YuUMCVX3UVE">Joshua Weinstein Video</a></p>
+<p>Embarrassingly parallel computing - <a href="https://en.wikipedia.org/wiki/Embarrassingly_parallel">Wikipedia</a></p>
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1">

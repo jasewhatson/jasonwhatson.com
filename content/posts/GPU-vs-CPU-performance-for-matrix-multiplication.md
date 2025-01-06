@@ -3,13 +3,13 @@ title: "GPU vs CPU Performance for Matrix Multiplication"
 date: 2024-12-28T13:41:59+11:00
 draft: false
 tags:
-- Deep Learning
+- Deep-Learning
 - GPU
-- Matrix Multiplication
-- Parallel Computing
-- Neural Networks
-- Artificial Intelligence
-- Linear Algebra
+- Matrix-Multiplication
+- Parallel-Computing
+- Neural-Networks
+- Artificial-Intelligence
+- Linear-Algebra
 ---
 
 ## Introduction: Unleashing the Power of Parallelism in AI
@@ -98,24 +98,6 @@ This demonstration illustrates why GPUs are indispensable for deep learning, and
 The shift from LSTMs to Transformers exemplifies how embracing parallelism revolutionized AI. By leveraging GPU-optimized architectures and operations like matrix multiplication, researchers have dramatically increased the scale, speed, and efficiency of training neural networks. The Transformer arcitectures ability to process sequences in parallel not only solved the inefficiencies of sequential models but also enabled the creation of groundbreaking LLMs. This leap in computational efficiency has paved the way for the explosive growth of AI, transforming industries and inspiring innovations that were once thought impossible.
 
 Artificial Neural Networks (ANNs), inspired by biological neurons, benefit immensely from GPUs because their core operations—primarily matrix multiplications—are inherently parallel. GPUs/TPUs are specifically designed for such workloads, with thousands of lightweight cores optimized for parallel matrix math and high memory bandwidth, making them ideal for the computational demands of AI.
-
-### Supporting & additional reading resources
-
-How do Graphics Cards Work? Exploring GPU Architecture - [Branch Education Video](https://www.youtube.com/watch?v=h9Z4oGN89MU)
-
-GPU Memory bandwidth requirements for machine learning - [Adil Lheureux](https://www.digitalocean.com/community/tutorials/gpu-memory-bandwidth)
-
-CUDA Cores Vs Tensor Cores: Choosing The Right GPU For Machine Learning  - [AceCloud](https://acecloud.ai/resources/blog/cuda-cores-vs-tensor-cores/)
-
-Nvidia CUDA in 100 Seconds for parraell computations - [Fireship Video](https://www.youtube.com/watch?v=pPStdjuYzSI)
-
-Transformers (how LLMs work) explained visually (Transformer mat mul) - [3Blue1Brown](https://youtu.be/wjZofJX0v4M?si=uuc7uE_2MoTJD4wI&t=297)
-
-SIMD Wiki - [Wikipedia](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data)
-
-What is SIMD? https://www.youtube.com/watch?v=YuUMCVX3UVE - [Joshua Weinstein Video](https://www.youtube.com/watch?v=YuUMCVX3UVE)
-
-Embarrassingly parallel computing - [Wikipedia](https://en.wikipedia.org/wiki/Embarrassingly_parallel)
 
 ## Cuda Demo Code
 
@@ -225,6 +207,24 @@ int main() {
     return 0;
 }
 ```
+
+## Supporting & additional reading resources
+
+How do Graphics Cards Work? Exploring GPU Architecture - [Branch Education Video](https://www.youtube.com/watch?v=h9Z4oGN89MU)
+
+GPU Memory bandwidth requirements for machine learning - [Adil Lheureux](https://www.digitalocean.com/community/tutorials/gpu-memory-bandwidth)
+
+CUDA Cores Vs Tensor Cores: Choosing The Right GPU For Machine Learning  - [AceCloud](https://acecloud.ai/resources/blog/cuda-cores-vs-tensor-cores/)
+
+Nvidia CUDA in 100 Seconds for parraell computations - [Fireship Video](https://www.youtube.com/watch?v=pPStdjuYzSI)
+
+Transformers (how LLMs work) explained visually (Transformer mat mul) - [3Blue1Brown](https://youtu.be/wjZofJX0v4M?si=uuc7uE_2MoTJD4wI&t=297)
+
+SIMD Wiki - [Wikipedia](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data)
+
+What is SIMD? https://www.youtube.com/watch?v=YuUMCVX3UVE - [Joshua Weinstein Video](https://www.youtube.com/watch?v=YuUMCVX3UVE)
+
+Embarrassingly parallel computing - [Wikipedia](https://en.wikipedia.org/wiki/Embarrassingly_parallel)
 
 [^1]: Deep learning with Python 2nd Edition by François Chollet - Chapeter 1.3.1 Hardware [Manning Books](https://www.manning.com/books/deep-learning-with-python-second-edition) 
 
