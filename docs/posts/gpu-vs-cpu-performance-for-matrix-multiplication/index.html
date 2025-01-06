@@ -8,15 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Jase Whatson" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="/css/main.min.a8a886d751742f10ce07e7398d6d79009420ed0e5e6e1d81e6b26655fc753d75.css" />
+    <link rel="stylesheet" href="/css/main.min.97cc403ebb6d07ce62dd7b32d6885dd18da10797c13e2442fa776caa98425e70.css" />
 
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="GPU vs CPU Performance for Matrix Multiplication"/>
-<meta name="twitter:description" content="Key Points in the Text 1.	LSTMs and Their Limitations •	LSTMs process input sequentially, token by token, which means: •	They cannot leverage parallel processing, as the current state depends on the previous token’s state. •	This leads to slower training times, especially for long sequences. •	They are recursive models, meaning each token must pass through the same network repeatedly, leading to bottlenecks in efficiency. 2.	Transformers and Parallelism •	Transformers, introduced in the seminal “Attention Is All You Need” paper (2017), solved this issue with: •	Positional embeddings: Adding positional information to represent sequence order, allowing tokens to be processed simultaneously instead of sequentially."/>
+<meta name="twitter:description" content="Introduction: Unleashing the Power of Parallelism in AI The field of artificial intelligence has undergone a revolution in recent years, driven in large part by advancements in hardware and the innovative architectures they enable. Traditional models like Long Short-Term Memory networks (LSTMs) were once state-of-the-art, but their sequential nature limited their ability to leverage parallel processing. Enter Transformers: a game-changing architecture that has reshaped the AI landscape by fully embracing the power of parallel computation."/>
 
     <meta property="og:title" content="GPU vs CPU Performance for Matrix Multiplication" />
-<meta property="og:description" content="Key Points in the Text 1.	LSTMs and Their Limitations •	LSTMs process input sequentially, token by token, which means: •	They cannot leverage parallel processing, as the current state depends on the previous token’s state. •	This leads to slower training times, especially for long sequences. •	They are recursive models, meaning each token must pass through the same network repeatedly, leading to bottlenecks in efficiency. 2.	Transformers and Parallelism •	Transformers, introduced in the seminal “Attention Is All You Need” paper (2017), solved this issue with: •	Positional embeddings: Adding positional information to represent sequence order, allowing tokens to be processed simultaneously instead of sequentially." />
+<meta property="og:description" content="Introduction: Unleashing the Power of Parallelism in AI The field of artificial intelligence has undergone a revolution in recent years, driven in large part by advancements in hardware and the innovative architectures they enable. Traditional models like Long Short-Term Memory networks (LSTMs) were once state-of-the-art, but their sequential nature limited their ability to leverage parallel processing. Enter Transformers: a game-changing architecture that has reshaped the AI landscape by fully embracing the power of parallel computation." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://jasonwhatson.com/posts/gpu-vs-cpu-performance-for-matrix-multiplication/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2024-12-28T13:41:59+11:00" />
@@ -32,7 +32,7 @@
       <nav class="app-header-menu">
           <a class="app-header-menu-item" href="/tags/">Tags</a>
       </nav>
-      <p>Documenting my journey as a developer into web3, blockchain, finance, cryptographic consensus &amp; related topics. DYOR</p>
+      <p>Documenting my journey as a developer into AI, web3, blockchain, finance, cryptographic consensus &amp; related topics. DYOR</p>
       <div class="app-header-social">
         
           <a href="https://github.com/jasewhatson" target="_blank" rel="noreferrer noopener me">
@@ -69,73 +69,75 @@
   <title>clock</title>
   <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
 </svg>
-          6 min read
+          9 min read
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="https://jasonwhatson.com/tags/gpu/">GPU</a>
         </div>
       </div>
     </header>
     <div class="post-content">
-      <p>Key Points in the Text
-1.	LSTMs and Their Limitations
-•	LSTMs process input sequentially, token by token, which means:
-•	They cannot leverage parallel processing, as the current state depends on the previous token’s state.
-•	This leads to slower training times, especially for long sequences.
-•	They are recursive models, meaning each token must pass through the same network repeatedly, leading to bottlenecks in efficiency.
-2.	Transformers and Parallelism
-•	Transformers, introduced in the seminal “Attention Is All You Need” paper (2017), solved this issue with:
-•	Positional embeddings: Adding positional information to represent sequence order, allowing tokens to be processed simultaneously instead of sequentially.
-•	Self-Attention Mechanism: By computing relationships between all tokens in a sequence in parallel, the model captures contextual dependencies across the entire sequence.
-•	These innovations enable the entire sequence to be processed simultaneously, allowing for parallel computation across GPUs.
-3.	Matrix Multiplication in Attention
-•	The attention mechanism relies heavily on dot products between matrices to calculate relationships between tokens (queries, keys, and values).
-•	This matrix multiplication is highly parallelizable and efficiently handled by GPUs.
-4.	Scalability of Transformers
-•	The architecture is inherently scalable because modern GPUs are optimized for matrix operations.
-•	Training large models like GPT, BERT, and modern LLMs is feasible because every step of the computation (attention, feedforward layers, etc.) is parallelized.
-5.	Compute Efficiency
-•	The ability to process sequences in parallel rather than token by token allowed researchers to train models on massive datasets in less time, leading to the explosive growth of Large Language Models (LLMs).</p>
-<p>Why This is True
-•	LSTMs vs. Transformers:
-•	LSTMs: Sequential, slow, and hard to scale to long contexts.
-•	Transformers: Parallel, fast, and scale well with compute resources.
-•	GPU Utilization:
-•	GPUs thrive on operations like matrix multiplication, a fundamental building block of the transformer architecture (attention, positional encoding, and feedforward layers all use it).
-•	Masked Attention:
-•	In transformers (e.g., GPT models), the masked self-attention mechanism ensures causal relationships are maintained, allowing autoregressive tasks (like text generation) to also benefit from parallelism during training.</p>
-<p>Conclusion</p>
-<p>The text is accurate in emphasizing how transformers overcame the primary limitation of sequential models (lack of parallelism) and utilized GPU-friendly operations (matrix multiplication). This parallelism is indeed why transformers became the foundation of modern AI, enabling the training of massive LLMs like GPT-4 and beyond.</p>
-<p><a href="https://www.youtube.com/watch?v=h9Z4oGN89MU">https://www.youtube.com/watch?v=h9Z4oGN89MU</a> - How do Graphics Cards Work? Exploring GPU Architecture (Branch Education)</p>
-<p><a href="https://en.wikipedia.org/wiki/Single_instruction,_multiple_data">https://en.wikipedia.org/wiki/Single_instruction,_multiple_data</a>
-<a href="https://en.wikipedia.org/wiki/Embarrassingly_parallel">https://en.wikipedia.org/wiki/Embarrassingly_parallel</a></p>
-<p>Deep learning with Python - FRANÇOIS CHOLLET</p>
-<p>1.3.1 Hardware
-Between 1990 and 2010, off-the-shelf CPUs became faster by a factor of approximately
-5,000. As a result, nowadays it’s possible to run small deep learning models on your
-laptop, whereas this would have been intractable 25 years ago.
-But typical deep learning models used in computer vision or speech recognition
-require orders of magnitude more computational power than your laptop can deliver.
-Throughout the 2000s, companies like NVIDIA and AMD invested billions of dollars
+      <h2 id="introduction-unleashing-the-power-of-parallelism-in-ai">Introduction: Unleashing the Power of Parallelism in AI</h2>
+<p>The field of artificial intelligence has undergone a revolution in recent years, driven in large part by advancements in hardware and the innovative architectures they enable. Traditional models like Long Short-Term Memory networks (LSTMs) were once state-of-the-art, but their sequential nature limited their ability to leverage parallel processing. Enter Transformers: a game-changing architecture that has reshaped the AI landscape by fully embracing the power of parallel computation.</p>
+<p>At the heart of this transformation is the GPU (Graphics Processing Unit). Originally designed for rendering photorealistic video games, GPUs have become indispensable for AI research and development. Their ability to execute thousands of simple operations simultaneously makes them ideal for tasks like matrix multiplication (and other linear algebra operations), an essential building block of neural networks. This distinction is exemplified in our interactive matrix multiplication demo below, where we compare parallel (GPU-powered) and non-parallel (CPU-based) computing. The results highlight why GPUs, &amp; recently, TPU&rsquo;s (Tensor Processing Units) are the cornerstone of modern AI.</p>
+<!-- ## Introduction: Unleashing the Power of Parallelism in AI - Claude fix
+
+The field of artificial intelligence has undergone a revolution in recent years, driven by significant advancements in hardware and the innovative architectures they enable. Traditional models like Long Short-Term Memory networks (LSTMs), while capable of running on GPUs, were limited by their inherently sequential nature in processing information. The emergence of Transformers marked a pivotal shift in AI architecture, not only by fully embracing parallel computation but also by introducing sophisticated self-attention mechanisms that could better handle long-range dependencies in data.
+
+At the heart of this transformation is the GPU (Graphics Processing Unit). Originally designed for rendering photorealistic video games, GPUs have become indispensable for AI research and development. Unlike CPUs, which have fewer but more complex cores, GPUs contain thousands of smaller, simpler cores optimized for parallel processing. This specialized architecture makes them exceptionally efficient at executing thousands of simple operations simultaneously, particularly for tasks like matrix multiplication and other linear algebra operations - the essential building blocks of neural networks. This fundamental difference is demonstrated in our interactive matrix multiplication demo below, where we compare parallel (GPU-powered) and non-parallel (CPU-based) computing. The results highlight why GPUs have become the cornerstone of modern AI development and training. -->
+<h2 id="why-lstms-hit-a-wall">Why LSTMs Hit a Wall</h2>
+<p>Long Short-Term Memory networks (LSTMs), while revolutionary for processing sequential data, face several fundamental limitations such as Sequential Processing Bottlenecks.</p>
+<p>LSTMs are inherently sequential models. Each input token depends on the state produced by the previous token, making it impossible to process sequences in parallel. For example, in a 1000-token sequence, token #500 cannot be processed until all 499 previous tokens have been computed.</p>
+<p>This sequential dependency results in slower training times and inefficiencies, particularly for long sequences. While modern GPUs excel at parallel computation, LSTMs cannot fully utilize this capability due to their architecture. The recursive nature of LSTMs means that every token must pass through the same network repeatedly, compounding these limitations.</p>
+<p>Alternitivly, Modern Transformer architectures &amp; GPU&rsquo;s a have largely addressed these limitations through self-attention mechanisms and parallel processing capabilities, enabling efficient processing of much longer sequences.</p>
+<p>Unlike CPUs, which have fewer but more complex cores, GPUs contain thousands of smaller, simpler cores optimized for parallel processing. This specialized architecture makes them exceptionally efficient at executing thousands of simple operations simultaneously, particularly for tasks like matrix multiplication and other linear algebra operations - the essential building blocks of neural networks.</p>
+<h2 id="how-transformers-overcame-sequential-processing-limitations">How Transformers Overcame Sequential Processing Limitations</h2>
+<p>Transformers, introduced in the 2017 paper “Attention Is All You Need,” revolutionized sequence processing through two key innovations. Positional embeddings that encode token order, and the self-attention mechanism that calculates relationships between all tokens in parallel.</p>
+<p>The parallel processing power of Transformers leverages two key computing concepts:</p>
+<h3 id="simd-single-instruction-multiple-data-architecture">SIMD (Single Instruction Multiple Data) Architecture</h3>
+<p>Deep learning models process vast amounts of data using mathematical operations. At their core, these operations rely heavily on matrix multiplications to transform input data into meaningful representations. This aligns perfectly with modern GPU architectures optimized for SIMD operations, enabling attention calculations to execute in parallel across multiple tokens.</p>
+<h3 id="embarrassingly-parallel-nature">Embarrassingly Parallel Nature</h3>
+<p>Self-attention computations can be split into completely independent calculations, with multiple attention heads processing different relationship aspects with no dependencies. These highly optimized matrix operations on specialized hardware (TPUs, GPU Tensor Cores) enable parallelization in both training and inference.</p>
+<p>This parallel architecture explains why Transformers scale so effectively to massive models and datasets compared to sequential architectures like LSTMs. The shift from O(n) sequential steps to parallel processing enabled training on unprecedented amounts of data, enabling new AI applications like modern Large Language Models (LLM&rsquo;s).</p>
+<h2 id="matrix-operations-the-core-of-ai-parallelism">Matrix Operations: The Core of AI Parallelism</h2>
+<p>The magic of Transformers lies in their utilisation of matrix operations—particularly within the self-attention mechanism. Tasks like calculating the relationships between queries, keys, and values in attention layers involve operations such as <a href="https://www.codecademy.com/resources/docs/numpy/built-in-functions/dot">dot products</a> between large matrices. GPUs excel at matrix math because:</p>
+<ul>
+<li>Massive Parallelism: GPUs have thousands of simple cores designed for executing parallel operations.</li>
+<li>High Memory Bandwidth: Modern GPUs can move data quickly between memory and processing units, a critical factor for large-scale computations.</li>
+<li>Vectorization: Operations on entire arrays (e.g., tensors) can be performed simultaneously, avoiding the inefficiency of loops.</li>
+</ul>
+<h2 id="why-gpus-changed-the-game">Why GPUs Changed the Game</h2>
+<p>Before GPUs were repurposed for AI, CPUs were the primary drivers of computation. While CPUs are versatile, their limited core count and reliance on sequential processing made them ill-suited for the parallelism required by neural networks. GPUs, on the other hand, are optimized for embarrassingly parallel tasks, such as rendering 3D scenes and performing massive matrix multiplications. The introduction of CUDA in 2007 allowed researchers to unlock the full potential of GPUs for AI workloads, replacing clusters of CPUs with smaller, more powerful GPU setups.</p>
+<blockquote>
+<p>Between 1990 and 2010, off-the-shelf CPUs became faster by a factor of approximately 5,000. As a result, nowadays it’s possible to run small deep learning models on your laptop, whereas this would have been intractable 25 years ago. But typical deep learning models used in computer vision or speech recognition require orders of magnitude more computational power than your laptop can deliver.</p>
+</blockquote>
+<blockquote>
+<p>Throughout the 2000s, companies like NVIDIA and AMD invested billions of dollars
 in developing fast, massively parallel chips (graphical processing units, or GPUs) to
 power the graphics of increasingly photorealistic video games—cheap, single-purpose
 supercomputers designed to render complex 3D scenes on your screen in real time.
 This investment came to benefit the scientific community when, in 2007, NVIDIA
-launched CUDA (<a href="https://developer.nvidia.com/about-cuda)">https://developer.nvidia.com/about-cuda)</a>, a programming interface
-Why deep learning? Why now?
-21
+launched <a href="https://developer.nvidia.com/about-cuda">CUDA</a>, a programming interface
 for its line of GPUs. A small number of GPUs started replacing massive clusters of
 CPUs in various highly parallelizable applications, beginning with physics modeling.
 Deep neural networks, consisting mostly of many small matrix multiplications, are
 also highly parallelizable, and around 2011 some researchers began to write CUDA
-implementations of neural nets—Dan Ciresan6 and Alex Krizhevsky7 were among
-the first.</p>
-<p>Memory Bandwidth - <a href="https://www.digitalocean.com/community/tutorials/gpu-memory-bandwidth">https://www.digitalocean.com/community/tutorials/gpu-memory-bandwidth</a>
-<a href="https://acecloud.ai/resources/blog/cuda-cores-vs-tensor-cores/">https://acecloud.ai/resources/blog/cuda-cores-vs-tensor-cores/</a></p>
-<p><a href="https://www.youtube.com/watch?v=pPStdjuYzSI">https://www.youtube.com/watch?v=pPStdjuYzSI</a> - Fireship Cuda</p>
-<p><a href="https://youtu.be/wjZofJX0v4M?si=uuc7uE_2MoTJD4wI&amp;t=297">https://youtu.be/wjZofJX0v4M?si=uuc7uE_2MoTJD4wI&amp;t=297</a> - 3Blue1Brown Transformer mat mul</p>
-<p>The reason AI and NNs benefit so much from GPUs is that their operations—primarily matrix multiplications—are inherently parallel, and GPUs are purpose-built to handle massive parallelism. CPUs simply don’t have the core count or memory bandwidth to match GPUs for these types of workloads.</p>
-<p>Vectorization: Instead of using loops, we can perform operations on entire arrays at once
-GPUs have thousands of simpler cores optimized for parallel matrix math</p>
-<p>because artificial neural networks were inspired by biological neurons.</p>
-<!-- <iframe src="./misc/matrix-multiply-vanilla.html " width="100%" height="500px"></iframe> -->
+implementations of neural nets—Dan Ciresan and Alex Krizhevsky were among
+the first. <cite> - François Chollet <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></cite></p>
+</blockquote>
+<h2 id="scalability-and-modern-ai">Scalability and Modern AI</h2>
+<p>Transformers are inherently scalable, and GPUs are their perfect companion. From the attention mechanism to feedforward layers, every step in the Transformer architecture benefits from parallelism. This synergy between hardware and architecture enabled the training of modern Large Language Models (LLMs) like GPT and BERT, which have billions of parameters. Without GPUs, training these models on massive datasets would take months or even years.</p>
+<h2 id="the-demo-parallel-computing-in-action">The Demo: Parallel Computing in Action</h2>
+<p>To truly appreciate the difference between parallel and sequential computing, check out the below matrix multiplication demo</p>
+<ul>
+<li>CPU (Non-Parallel): Processes matrix elements sequentially, with performance bottlenecks as input size grows.</li>
+<li>GPU (Parallel): Leverages thousands of cores to compute results simultaneously, demonstrating the massive speedup achieved through parallelism. For the purposes of this demo we are using four parraell procceses</li>
+</ul>
+<p>This demonstration illustrates why GPUs are indispensable for deep learning, and why the Transformer arcitectue has replaced LSTMs as the foundation of modern AI.</p>
 
 <!--<!DOCTYPE html>
  <html>
@@ -528,6 +530,27 @@ GPUs have thousands of simpler cores optimized for parallel matrix math</p>
 <!-- </body>
 
 </html> -->
+<h2 id="conclusion">Conclusion</h2>
+<p>The shift from LSTMs to Transformers exemplifies how embracing parallelism revolutionized AI. By leveraging GPU-optimized architectures and operations like matrix multiplication, researchers have dramatically increased the scale, speed, and efficiency of training neural networks. The Transformer arcitectures ability to process sequences in parallel not only solved the inefficiencies of sequential models but also enabled the creation of groundbreaking LLMs. This leap in computational efficiency has paved the way for the explosive growth of AI, transforming industries and inspiring innovations that were once thought impossible.</p>
+<p>Artificial Neural Networks (ANNs), inspired by biological neurons, benefit immensely from GPUs because their core operations—primarily matrix multiplications—are inherently parallel. GPUs/TPUs are specifically designed for such workloads, with thousands of lightweight cores optimized for parallel matrix math and high memory bandwidth, making them ideal for the computational demands of AI.</p>
+<h3 id="supporting--additional-reading-resources">Supporting &amp; additional reading resources</h3>
+<p>How do Graphics Cards Work? Exploring GPU Architecture - <a href="https://www.youtube.com/watch?v=h9Z4oGN89MU">Branch Education Video</a></p>
+<p>GPU Memory bandwidth requirements for machine learning - <a href="https://www.digitalocean.com/community/tutorials/gpu-memory-bandwidth">Adil Lheureux</a></p>
+<p>CUDA Cores Vs Tensor Cores: Choosing The Right GPU For Machine Learning  - <a href="https://acecloud.ai/resources/blog/cuda-cores-vs-tensor-cores/">AceCloud</a></p>
+<p>Nvidia CUDA in 100 Seconds for parraell computations - <a href="https://www.youtube.com/watch?v=pPStdjuYzSI">Fireship Video</a></p>
+<p>Transformers (how LLMs work) explained visually (Transformer mat mul) - <a href="https://youtu.be/wjZofJX0v4M?si=uuc7uE_2MoTJD4wI&amp;t=297">3Blue1Brown</a></p>
+<p>SIMD Wiki - <a href="https://en.wikipedia.org/wiki/Single_instruction,_multiple_data">Wikipedia</a></p>
+<p>What is SIMD? <a href="https://www.youtube.com/watch?v=YuUMCVX3UVE">https://www.youtube.com/watch?v=YuUMCVX3UVE</a> - <a href="https://www.youtube.com/watch?v=YuUMCVX3UVE">Joshua Weinstein Video</a></p>
+<p>Embarrassingly parallel computing - <a href="https://en.wikipedia.org/wiki/Embarrassingly_parallel">Wikipedia</a></p>
+<h2 id="cuda-demo-code">Cuda Demo Code</h2>
+<figure style="text-align: center;">
+    <img width="100%" src="/images/GPUCudavsCPU-ezgifdotcom.gif" alt="Under construction">
+    <div>GPU Computation Time: 21.504 ms <br>
+CPU Computation Time: 14559.604 ms <br>
+GPU Total Threads = (16 × 16) × [1024/16] × [1024/16] = 256 × 64 × 64 = 1,048,576 <br>
+CPU Total Threads = 1 Single Thread
+</div>
+</figure>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -724,7 +747,15 @@ GPUs have thousands of simpler cores optimized for parallel matrix math</p>
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
+</div><div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Deep learning with Python 2nd Edition by François Chollet - Chapeter 1.3.1 Hardware <a href="https://www.manning.com/books/deep-learning-with-python-second-edition">Manning Books</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
 </div>
+
     </div>
     <div class="post-footer">
       

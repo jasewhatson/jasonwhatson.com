@@ -2,34 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jasonwhatson.com/tags/artificial-intelligence/</loc>
+    <lastmod>2024-12-28T13:41:59+11:00</lastmod>
+  </url><url>
+    <loc>https://jasonwhatson.com/tags/deep-learning/</loc>
+    <lastmod>2024-12-28T13:41:59+11:00</lastmod>
+  </url><url>
+    <loc>https://jasonwhatson.com/tags/gpu/</loc>
+    <lastmod>2024-12-28T13:41:59+11:00</lastmod>
+  </url><url>
     <loc>https://jasonwhatson.com/posts/gpu-vs-cpu-performance-for-matrix-multiplication/</loc>
+    <lastmod>2024-12-28T13:41:59+11:00</lastmod>
+  </url><url>
+    <loc>https://jasonwhatson.com/tags/linear-algebra/</loc>
+    <lastmod>2024-12-28T13:41:59+11:00</lastmod>
+  </url><url>
+    <loc>https://jasonwhatson.com/tags/matrix-multiplication/</loc>
     <lastmod>2024-12-28T13:41:59+11:00</lastmod>
   </url><url>
     <loc>https://jasonwhatson.com/</loc>
     <lastmod>2024-12-28T13:41:59+11:00</lastmod>
   </url><url>
+    <loc>https://jasonwhatson.com/tags/neural-networks/</loc>
+    <lastmod>2024-12-28T13:41:59+11:00</lastmod>
+  </url><url>
+    <loc>https://jasonwhatson.com/tags/parallel-computing/</loc>
+    <lastmod>2024-12-28T13:41:59+11:00</lastmod>
+  </url><url>
     <loc>https://jasonwhatson.com/posts/</loc>
     <lastmod>2024-12-28T13:41:59+11:00</lastmod>
   </url><url>
-    <loc>https://jasonwhatson.com/tags/blockchain-development/</loc>
-    <lastmod>2023-11-09T19:45:56+11:00</lastmod>
-  </url><url>
-    <loc>https://jasonwhatson.com/tags/consensus/</loc>
-    <lastmod>2023-11-09T19:45:56+11:00</lastmod>
-  </url><url>
-    <loc>https://jasonwhatson.com/tags/governance/</loc>
-    <lastmod>2023-11-09T19:45:56+11:00</lastmod>
-  </url><url>
     <loc>https://jasonwhatson.com/tags/</loc>
-    <lastmod>2023-11-09T19:45:56+11:00</lastmod>
-  </url><url>
-    <loc>https://jasonwhatson.com/posts/the-complete-model-of-money/</loc>
-    <lastmod>2023-11-09T19:45:56+11:00</lastmod>
-  </url><url>
-    <loc>https://jasonwhatson.com/tags/zero-knowledge-proof/</loc>
-    <lastmod>2023-11-09T19:45:56+11:00</lastmod>
+    <lastmod>2024-12-28T13:41:59+11:00</lastmod>
   </url><url>
     <loc>https://jasonwhatson.com/posts/a-world-of-cryptographic-truth/</loc>
+    <lastmod>2023-05-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jasonwhatson.com/tags/blockchain-development/</loc>
+    <lastmod>2023-05-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jasonwhatson.com/tags/consensus/</loc>
+    <lastmod>2023-05-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jasonwhatson.com/tags/governance/</loc>
+    <lastmod>2023-05-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jasonwhatson.com/tags/zero-knowledge-proof/</loc>
     <lastmod>2023-05-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jasonwhatson.com/posts/crypto-projects-written-in-golang/</loc>

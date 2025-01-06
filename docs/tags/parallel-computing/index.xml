@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Parallel Computing on My thoughts</title>
+    <link>https://jasonwhatson.com/tags/parallel-computing/</link>
+    <description>Recent content in Parallel Computing on My thoughts</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Dec 2024 13:41:59 +1100</lastBuildDate><atom:link href="https://jasonwhatson.com/tags/parallel-computing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GPU vs CPU Performance for Matrix Multiplication</title>
+      <link>https://jasonwhatson.com/posts/gpu-vs-cpu-performance-for-matrix-multiplication/</link>
+      <pubDate>Sat, 28 Dec 2024 13:41:59 +1100</pubDate>
+      
+      <guid>https://jasonwhatson.com/posts/gpu-vs-cpu-performance-for-matrix-multiplication/</guid>
+      <description>Introduction: Unleashing the Power of Parallelism in AI The field of artificial intelligence has undergone a revolution in recent years, driven in large part by advancements in hardware and the innovative architectures they enable. Traditional models like Long Short-Term Memory networks (LSTMs) were once state-of-the-art, but their sequential nature limited their ability to leverage parallel processing. Enter Transformers: a game-changing architecture that has reshaped the AI landscape by fully embracing the power of parallel computation.</description>
+    </item>
+    
+  </channel>
+</rss>
