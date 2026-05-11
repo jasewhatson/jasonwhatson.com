@@ -15,7 +15,7 @@ publishDir = "docs"
   weight = 1
   identifier = "cv"
   name = "CV / Resume"
-  url = "http://localhost:1313/files/Jason-Whatson-senior-fullstack-engineer-ai-ml-aws-data-cv-resume.pdf" #http://localhost:1313 / https://jasonwhatson.com
+  url = "https://jasonwhatson.com/files/Jason-Whatson-senior-fullstack-engineer-ai-ml-aws-data-cv-resume.pdf" #http://localhost:1313 / https://jasonwhatson.com
 
   [params.style]
   primaryColor = "#77a6ee"
