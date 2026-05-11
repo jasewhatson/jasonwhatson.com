@@ -5,34 +5,6 @@
     <link>https://jasonwhatson.com/categories/</link>
     <description>Recent content in Categories on My thoughts</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 23 Oct 2025 00:00:00 +1100</lastBuildDate><atom:link href="https://jasonwhatson.com/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>AI</title>
-      <link>https://jasonwhatson.com/categories/ai/</link>
-      <pubDate>Thu, 23 Oct 2025 00:00:00 +1100</pubDate>
-      
-      <guid>https://jasonwhatson.com/categories/ai/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dialogue</title>
-      <link>https://jasonwhatson.com/categories/dialogue/</link>
-      <pubDate>Thu, 23 Oct 2025 00:00:00 +1100</pubDate>
-      
-      <guid>https://jasonwhatson.com/categories/dialogue/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Philosophy</title>
-      <link>https://jasonwhatson.com/categories/philosophy/</link>
-      <pubDate>Thu, 23 Oct 2025 00:00:00 +1100</pubDate>
-      
-      <guid>https://jasonwhatson.com/categories/philosophy/</guid>
-      <description></description>
-    </item>
-    
+    <language>en-us</language><atom:link href="https://jasonwhatson.com/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

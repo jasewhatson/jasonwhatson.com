@@ -1,4 +1,5 @@
-> hugo -D --gc 
+> hugo -D --gc  #drafts
+> hugo --gc     #no drafts
 > hugo server
 
 > hugo new posts/your-post-name.md
