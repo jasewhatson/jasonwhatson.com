@@ -11,13 +11,18 @@ publishDir = "docs"
   identifier = "tags"
   name = "Tags"
   url = "/tags/"
+[[menu.main]]
+  weight = 1
+  identifier = "cv"
+  name = "CV / Resume"
+  url = "http://localhost:1313/files/Jason-Whatson-senior-fullstack-engineer-ai-ml-aws-data-cv-resume.pdf" #http://localhost:1313 / https://jasonwhatson.com
 
   [params.style]
   primaryColor = "#77a6ee"
 
 [params]
   author = "Jase Whatson"
-  description = "Documenting my journey as a developer into AI, web3, blockchain, finance, cryptographic consensus & related topics. DYOR"
+  description = "Documenting my journey as a developer into AI, machine learning, web3, blockchain, finance, cryptographic consensus & related topics. DYOR"
   menu_item_separator = " - "
   [[params.social]]
     icon = "github"
@@ -27,6 +32,10 @@ publishDir = "docs"
     icon = "twitter"
     name = "Twitter"
     url = "https://twitter.com/jasewhatson"
+  [[params.social]]
+    icon = "file-text"
+    name = "CV / Résumé"
+    url = "/files/Jason-Whatson-senior-fullstack-engineer-ai-ml-aws-data-cv-resume.pdf"
 
 [markup.goldmark.renderer]
   unsafe = true
